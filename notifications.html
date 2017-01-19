@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notifications</title>
+</head>
+<body>
+    <button onclick="sendMessage()">Отправить сообщение</button>
+    
+    <script>
+        function sendMessage() {
+            Notification.requestPermission().then(function(permission) {
+                if (permission == 'granted') {
+                    new Notification('Test message', {
+                        body: 'Body test message',
+                        icon: 'http://снт-восход.рф/wp-content/uploads/2015/12/img_0120-2.jpg'
+                    });
+                }
+            });   
+       }
+    </script>
+</body>
+</html>
