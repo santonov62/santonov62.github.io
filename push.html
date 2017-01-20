@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notifications</title>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+</head>
+<body>
+    <button onclick="sendMessage()">Отправить сообщение</button>
+    <h1>Test</h1>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+          appId: "419d83d5-6116-483b-a243-343ed481b9f9",
+          autoRegister: false,
+          notifyButton: {
+            enable: true /* Set to false to hide */
+          }
+        }]);
+    </script>
+</body>
+</html>
+
+<!--419d83d5-6116-483b-a243-343ed481b9f9-->

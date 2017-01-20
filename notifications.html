@@ -10,13 +10,18 @@
         function sendMessage() {
             Notification.requestPermission().then(function(permission) {
                 if (permission == 'granted') {
-                    new Notification('Test message', {
+                    var message = new Notification('Test message', {
                         body: 'Body test message',
                         icon: 'http://снт-восход.рф/wp-content/uploads/2015/12/img_0120-2.jpg'
                     });
+                    message.onclick = function() {
+                        
+                    }
                 }
-            });   
+            });
        }
     </script>
 </body>
 </html>
+
+<!--419d83d5-6116-483b-a243-343ed481b9f9-->
